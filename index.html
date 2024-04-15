@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booklovers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.13.0-web/css/all.css">
 </head>
 <body>
- <div id="maincontainer">
-    <div id="subcontainer">
-    <nav class="navbar">
+ <div id="mainPage">
+    
+    <nav>
         
-        <div class="figure">
-            <img class="booklogo" src="images/bookstacklogo.jpeg" alt="bookstack">
-            <p>Imla'</p>
-        </div>
-        
-        <nav class="navbar-1">
-            <a href="#">Book Type</a>
-            <a href="#">Recommendation</a>
-            <a href="#">Popular</a>
-            <a href="#">Download App</a>
-        </nav>
-
-        <nav>
-            <a href="#">Log In</a>
-            <button class="greenbtn">Start For Free</button>
-        </nav>
+        <div class="logo"><img class="booklogo" src="images/bookstacklogo.jpeg" alt="bookstack"><h1 class="logo">Imla'</h1></div>
+        <div class="openMenu"><i class = "fa fa-bars"></i></div>
+        <ul class="mainMenu">
+         <li><a href="#">Book Type</a></li>
+         <li><a href="#">Recommendation</a></li>
+         <li><a href="#">Popular</a></li>
+         <li><a href="#">Download App</a></li>
+         <li><a href="#">Log In</a></li>
+         <li><button class="btn">Start For Free</button></li>
+         <div class="closeMenu"><i class = "fa fa-times"></i></div>
+        </ul>
+    
     </nav>
 
-    <div class="container">
+    <div class="firstPage">
         <div>
             <div>
                 <h1>Find the book you're</h1>
@@ -38,41 +35,50 @@
             </div>
 
             <div>
-                <p>The most appropriate site to search for books</p>
+                <p class="text">The most appropriate site to search for books</p>
             </div>
             <br>
             <br>
             <br>
             <div class="search">
-                <p>Find your favorite book <button class="greenbtn">Search</button></p>
+                <input class="input" type="text" placeholder="Find your favorite book"> 
+                <button class="btn">search</button> 
+                
             </div>
 
-            <div>
-                <span>Follow Us</span>
-                <img src="images/facebook.png" alt="facebook logo">
-                <img src="images/pinterest.png" alt="pinterest logo">
-                <img src="images/twitter.png" alt="twitter logo">
-                <img src="images/instagram.png" alt="instagram">
+            <div class="iconZ">
+                <br>
+                <br>
+                <div><h4>Follow Us</h4></div>
+                <br>
+                <br>
+                <div class="icons">
+                 <img class="icon" src="images/facebook.png" alt="facebook logo">
+                 <img class="icon"  src="images/pinterest.png" alt="pinterest logo">
+                 <img class="icon" src="images/twitter.png" alt="twitter logo">
+                 <img class="icon" src="images/instagram.png" alt="instagram">
+                </div>
             </div>
         </div>
 
         <div>
-            <img class="girl" src="images/girlreading.jpg" alt="book reader">
+            <img class="readerImage" src="images/girlreading.jpg" alt="book reader">
         </div>
     </div>
     <div class="footer">
-        <p class="midtext">Trusted by thousands of companies around the world</p>
+        <p class="Clients">Trusted by thousands of companies around the world</p>
         <div class="companies">
             <img class="logos" src="images/amzonlog.webp" alt="amazon">
-            <img class="logos" src="images/dribble.png" alt="dribble">
-            <img class="logos" src="images/disney.png" alt="disney">
-            <img class="logos" src="images/spotify.png" alt="spotify">
-            <img class="logos" src="images/netflix.jpg" alt="netflix">
-            <img class="logos" src="images/joox.png" alt="Joox">
+            <img class="logos" src="images/dribblewithout.png" alt="dribble">
+            <img class="logos" src="images/disneywithout.png" alt="disney">
+            <img class="logos" src="images/spotifywithout.png" alt="spotify">
+            <img class="logos" src="images/netflixwithout.png" alt="netflix">
+            <img class="logos" src="images/jooxwithout.png" alt="Joox">
             <img class="logos" src="images/yahoo.png" alt="yahoo">
         </div>
     </div>
   </div>
  </div>
+ <script src="web.js"></script>
 </body>
 </html>

@@ -1,7 +1,57 @@
-.navbar{
+nav{
     display: flex;
-    text-decoration: none;
+    
     justify-content: space-evenly;
+    color: #000;
+    
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arial',sans-serif;
+    background: #fff;
+
+}
+.mainPage{
+    font-family: 'Arial',sans-serif;
+    background: #94c5db;
+}
+.mainMenu{
+    display: flex;
+    list-style: none;
+}
+.mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color:#b4b4bd;
+    font-size: 0.75rem;
+}
+.mainMenu li a:hover{
+    background:  #83bfba;
+}
+.openMenu i {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+   
+}
+.logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.mainMenu .closeMenu i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+
 }
 .figure{
     display: flex;
@@ -10,50 +60,67 @@
 .booklogo{
     width: 40px;
 }
-.navbar1{
-    color: black;
-    text-decoration: none;
-    gap: 10%;
+
+.text{
+    color:#b4b4bd;
 }
-.container{
+
+
+.firstPage{
     display: flex;
-    justify-content: space-evenly;
-    border: solid;
-    border: deepskyblue;
-    border-block: 20% ;
-    padding: 10%;
+    justify-content: space-evenly; 
+    gap: 10px;
+    margin-left: 300px;
+    
+
 }
 .companies{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: 20px;
+    margin-left: 29%;
 }
 .logos{
     
-    width: 10%;
+    width: 100px;
+    height: 90px  ;
 }
 .midtext{
     align-items: center;
     margin-left: 20%;
 }
 .footer{
-    background-color: #e3f03ef;
+    background-color: #e3f0ef;
+    padding: 10px;
 }
-.girl{
+.readerImage{
     border-radius: 50%;
+    margin-left: -20%;
+    background: #f2c776;
 }
-.greenbtn{
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
     border-radius: 70px;
     width: 140px;
-    height: 60px;
+    height: 50px;
+    background: #83bfba;
+    border:none;
+    margin:5px;
+    
 }
 .search{
-    border: solid;
-    border-radius: 50px;
-    width: 500px;
-   gap: 50%;
-   padding: 1%;
+  
+    display: inline-block;
+    position: relative;
     
 
+}
+.input{
+    border-radius: 50px;
+    width: 500px; 
+    height: 60px; 
+    border: none;
 }
 #maincontainer{
     background-color: #D3DAEB;
@@ -61,19 +128,27 @@
     margin: 100px 50px;
     padding: 50px 40px; 
 }
-#maincontainer{
-    background-color: antiquewhite;
-    margin: 80px 70px;
-} 
+.iconZ{
+    display: flex;
+    gap: 2%;
+}
+.icon{
+    width: 20px;
+}
+.Clients{
+    text-align: center;
+    color:#b4b4bd ;
+}
+
 
 @media screen and (max-width:375px) {
     .navbar{
         display: grid;
         text-decoration: none;
-        grid-template-columns: 1 1fr;
+        justify-content: space-evenly;
     }
     .figure{
-        display: grid;
+        display: flex;
         margin-right: 5%;
     }
     .booklogo{
@@ -86,7 +161,7 @@
     }
     .container{
         display: grid;
-        grid-template-columns: 1 1fr;
+        justify-content: space-evenly;
         border: solid;
         border: deepskyblue;
         border-block: 20% ;
@@ -94,7 +169,7 @@
     }
     .companies{
         display: grid;
-        grid-template-columns: 1 1fr;
+        
     }
     .logos{
         
@@ -102,23 +177,23 @@
     }
     .midtext{
         align-items: center;
-        margin-left: 20%;
+        margin-right: 10%;
     }
     .footer{
-        background-color: #E3F0EF;
+        background-color: #e3f;
     }
     .girl{
-        border-radius: 20%;
+        border-radius: 50%;
     }
     .greenbtn{
         border-radius: 70px;
-        width: 100px;
+        width: 140px;
         height: 60px;
     }
     .search{
         border: solid;
-        border-radius: 10px;
-        width: 200px;
+        border-radius: 50px;
+        width: 500px;
        gap: 50%;
        padding: 1%;
         
@@ -130,11 +205,33 @@
         margin: 100px 50px;
         padding: 50px 40px; 
     }
-    
     #maincontainer{
         background-color: antiquewhite;
         margin: 80px 70px;
     } 
+      
     
 }
+ @media(max-width: 800px){
+    .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+    }
+ }
 
