@@ -155,96 +155,6 @@ body{
     width: 100%;
 }
 
-@media screen and (max-width:280px) {
-    .navbar{
-        display: flex;
-        flex-wrap: wrap;
-        color: #000;
-    }
-    .mainMenu{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .opening-Text{
-        font-size:15px;
-        font-weight: 200px;
-    }
-    #second-section-text{
-        display: flex;
-        flex-wrap: wrap;
-    } 
-    
-    .text{
-        font-size: 15px;
-    }
-    .search{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .homepage{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .readerImage{
-        border-radius: 50%;
-        height: 200px;
-        /* margin-left: -10%; */
-        
-        /* background: #f2c776; */
-    }
-    .searchbutton{
-        /* position: absolute; */
-        top: 0;
-        right: 0;
-        border-radius: 70px;
-        width: 140px;
-        height: 50px;
-        background: #83bfba;
-        border:none;
-        margin:4px;
-        
-    }
-    .search{
-      
-        display: flex;
-        flex-wrap: wrap;
-        
-    
-    }
-    .input{
-        border-radius: 50px;
-        width: 200px; 
-        height: 60px; 
-        border: none;
-        font-size: 18px;
-    
-    }
-    
-    .icon-div{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2%;
-    }
-    
-    .footer-images{
-        display: flex;
-        flex-wrap: wrap;
-        /* justify-content: 20px; */
-        /* margin-left: 20%; */
-    }
-    .footer-text{
-        text-align: center;
-        color:#b4b4bd ;
-    }
-    .footer{
-        background-color: #e3f0ef;
-        padding: 2px;
-        /* margin-top: 1%; */
-        height: 47vh;
-        width: 100%;
-    } 
-}
 
 @media screen and (max-width:375px) {
     .navbar{
@@ -338,7 +248,7 @@ body{
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (min-width:450px) {
     .navbar{
         display: flex;
         flex-wrap: wrap;
